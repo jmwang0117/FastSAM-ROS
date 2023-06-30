@@ -1,0 +1,9 @@
+<launch>
+    <!-- 启动capture_image_publish.py -->
+    <node name="capture_image_publish_node" pkg="fastsam_ros" type="capture_image_publish.py" output="screen">
+    </node>
+
+    <!-- 启动fastsam_node.py -->
+    <node name="fastsam_inference" pkg="fastsam_ros" type="fastsam_inference.py" output="screen">
+    </node>
+</launch>
